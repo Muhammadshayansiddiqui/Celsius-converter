@@ -63,7 +63,7 @@ header{
 
 .conversion{
     border: 10px solid black;
-    height: 900px;
+    height: 1800px;
     display: flex;
     justify-content: space-around;
     align-items: center;
