@@ -1,0 +1,209 @@
+*{
+    margin: 2px;
+    padding: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* header */
+
+header{
+    background-color: rgb(25, 118, 248);
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 10px solid black;
+}
+.signin button{
+    margin: 100px;
+    margin-right: 0px;
+    height: 40px;
+    width: 100px;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    border: 2px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3 ease;
+    z-index: 1;
+    font-size: 20px ;
+}
+
+.signin button::before{
+    transition: all 0.3 ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    background-color: rgb(0, 0, 0);
+    z-index: -1;
+}
+.signin button:hover , .signin button:focus{
+    background-color: rgb(0, 0, 0);
+}
+
+.signin button:hover:before , .signin button:focus:before{
+    transition: 0.5 all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+}
+.signin button:active{
+    transform: scale(0.9);
+}   
+#nav-logo{
+    border-radius: 50%;
+    height: 90px;
+    width: 90px;
+}
+
+/* main */
+
+.conversion{
+    border: 10px solid black;
+    height: 900px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:  rgb(25, 118, 248);
+    flex-wrap: wrap;
+}
+/* celsius to fahrenheit */
+
+.c-f{
+    border: 2px solid black;
+    height: 400px;
+    width: 400px;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+.c-f h1{
+    text-align: center;
+    color: white;
+}
+
+#celcius{
+    width: 250px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    height: 30px;
+}
+h3{
+    display: inline;
+    color: white;
+}
+
+/* fahrenheit to celsius */
+
+.f-c{
+    border: 2px solid black;
+    height: 400px;
+    width: 400px;
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+.f-c h1{
+    text-align: center;
+    color: white;
+}
+
+#fahrenheit{
+    width: 250px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    height: 30px;
+}
+
+/* celsius to kelvin */
+
+.c-k{
+    border: 2px solid black;
+    height: 400px;
+    width: 400px;
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+.c-k h1{
+    text-align: center;
+    color: white;
+}
+
+#celcius-kelvin{
+    width: 250px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    height: 30px;
+}
+
+/* fahrenheit to kelvin */
+
+.f-k{
+    border: 2px solid black;
+    height: 400px;
+    width: 400px;
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+.f-k h1{
+    text-align: center;
+    color: white;
+}
+
+#fahrenhiet-kelvin{
+    width: 250px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    height: 30px;
+}
+h3{
+    display: inline;
+    color: white;
+}
+
+#convert{
+    height: 50px;
+    width: 100px;
+    background-color: black;
+    border: 2px solid rgb(255, 255, 255);
+    color: white;
+    cursor: pointer;
+    color: white;
+    border-radius: 10px;
+    transition: all 0.3 ease;
+    z-index: 1;
+    margin-bottom: 30px;
+    font-size: 20px ;
+} 
+
+/* clickable convert */
+
+#convert::before{
+    transition: all 0.3 ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    background-color: rgb(0, 0, 0);
+    z-index: -1;
+}
+#convert:hover , #convert:focus{
+    background-color: rgb(0, 0, 0);
+}
+
+#convert:hover:before , #convert:focus:before{
+    transition: 0.5 all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+}
+#convert:active{
+    transform: scale(0.9);
+}

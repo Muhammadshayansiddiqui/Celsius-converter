@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="img">
+            <img src="logo.png" alt="logo" id="nav-logo">
+        </div>
+        <div class="signin">
+            <button>sign up</button>
+            <button>login</button>
+        </div>
+    </header>
+    <main>
+        <div class="conversion">
+            <div class="c-f">
+                <u>
+                    <h1>Celcius to Fahrenhiet</h1>
+                </u>
+                <input type="number" id="celcius" name="celcius">
+                <h3>celcius</h3>
+                <button id="convert" onclick="convert()">Convert</button>
+                <p id="fahreheit"></p>
+            </div>
+            <br>
+            <div class="f-c">
+                <u>
+                    <h1>Fahrenheit to Celcius</h1>
+                </u>
+                <input type="number" id="fahrenheit" name="fahrenheit">
+                <h3>fahrenheit</h3>
+                <button id="convert" onclick="fc()">Convert</button>
+                <p id="centigrade"></p>
+            </div>
+            <br>
+            <div class="c-k">
+                <u>
+                    <h1>Celsius to Kelvin</h1>
+                </u>
+                <input type="number" id="celcius-kelvin" name="Kelvin">
+                <h3>Celsius</h3>
+                <button id="convert" onclick="ck()">Convert</button>
+                <p id="kelvin-temperature"></p>
+            </div>
+            <br>
+            <div class="f-k">
+
+                <u>
+                    <h1>Fahrenhiet to kelvin</h1>
+                </u>
+                <input type="number" id="fahrenhiet-kelvin">
+                <h3>Fahrenheit</h3>
+                <button id="convert" onclick="fk()">Convert</button>
+                <p id="fahrenheit-kelvin-temperature"></p>
+            </div>
+        </div>
+         <!-- <div class="wit">
+            <div id="about">
+                <h1>ABOUT TEMPERATURE</h1>
+            </div>
+            <div class="at1">
+                <p>Temperature is a measure of how hot or cold something is. It is measured in degrees, such as Celsius, Fahrenheit, or Kelvin.</p>
+                <br>
+                <h3>Types of Units of Temperature</h3>
+                <br>
+                <p>Temperature is measured in degrees. There are three main units of temperature:
+                    <ul>
+                        <li>Celsius (°C) is the most common unit in most of the world.</li>
+                        <li>Fahrenheit (°F) is used in the United States and a few other countries.</li>
+                        <li>Kelvin (K) is the SI unit of temperature, used in science and engineering.</li>
+                    </ul>
+                </p>
+            </div>
+        </div> 
+    </main> -->
+
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>
